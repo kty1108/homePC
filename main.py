@@ -1,7 +1,5 @@
-
-'''
 # Even & Odd number
-if __name__ == '__main__':
+def evenOdd():
 
     print(10 / 3)
     print(101 % 2)
@@ -11,7 +9,7 @@ if __name__ == '__main__':
 
 # Multiple of 3 & 5, and summarized
 # i++ ++i -> not supported in Python
-if __name__ == '__main__':
+def multipleSummarization():
 
     user_input = input()
 
@@ -30,11 +28,9 @@ if __name__ == '__main__':
 
     print(sum(m3))
 
-'''
-
 # Average & Grade of subjects
-if __name__ == '__main__':
-    user_input = '0 1 2' #input()
+def scoreReturn():
+    user_input = '90 61 72' #input()
 
     usr_split = user_input.split(' ')
     usr_num = list(map(int, usr_split))
@@ -56,3 +52,7 @@ if __name__ == '__main__':
         exit()
 
     print('{:.2f}'.format(f_avg_val), grade)
+
+
+if __name__ == '__main__':
+    scoreReturn()
