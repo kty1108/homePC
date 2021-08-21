@@ -137,5 +137,23 @@ def big_O():
             break
     print(cnt)
 
+# GCD, Greatest Common Divisor between A and B
+def euclideanAlgorithm():
+    a, b = map(int, input().split())
+
+    r = int()
+    r = 1
+
+    while (r):
+        r = a % b
+
+        if (r == 0):
+            print(b)
+            break
+
+        a = b
+        b = r
+
+
 if __name__ == '__main__':
-    big_O()
+    euclideanAlgorithm()
